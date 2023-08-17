@@ -93,3 +93,53 @@ button:hover {
   cursor: pointer;
   
 }
+
+
+<section>
+  <div class="top">
+    <div>
+      <input placeholder="top text">
+      <input placeholder="bottom text">
+    </div>
+    <button>Click For A New Image</button>
+  </div>
+  <div class="meme-img">
+    <p></p>
+  </div>
+</section>
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+section {
+  width: 500px;
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.top {
+  border: 1px solid green;
+}
+
+.top div {
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  width: 45%;
+}
+
+button {
+  width: 100%;
+}
+
+.meme
+
+.meme-img p {
+  width: 300px;
+  border: 1px solid red;
+  height: 300px;
+}
