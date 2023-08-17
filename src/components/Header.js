@@ -7,10 +7,10 @@ import logo from "../img/meme-logo.png";
 const Header = () => {
     return (
         <header>
-            <div className="left-header-wrap">
+            <div className="header-wrap">
                 <img src={logo}></img>
+                <h3>Meme Generator</h3>
             </div>
-            <div></div>
         </header>
     );
 }

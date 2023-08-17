@@ -14,13 +14,14 @@ import logo from './logo.svg';
 import './App.css';
 
 import Header from './components/Header';
+import Body from './components/Body';
 
 
 function App() {
   return (
     <div className="App">
-      <h3>this is a test</h3>
       <Header />
+      <Body />
     </div>
   );
 }
