@@ -41,73 +41,6 @@ header {
 
 /* meme section */
 
-.meme-img {
-  height: 200px;
-  width: 200px;
-  border: 1px solid black;
-}
-
-section {
-  border: 1px solid red;
-  width: 1000px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.meme-top {
-  width: 500px;
-  border: 1px solid red;
-}
-
-.inputs {
-  display: flex;
-  justify-content: center;
-
-}
-
-.inputs div {
-
-}
-
-input {
-  width: 90%;
-  padding: 10px;
-}
-
-button {
-  background: rgb(54,198,244);
-  background: linear-gradient(90deg, rgba(54,198,244,1) 0%, rgba(135,254,201,1) 100%);
-  border: none;
-  border-radius: 10px;
-  padding: 10px;
-  transition: all 1s;
-  color: white;
-  width: 100%;
-}
-
-button:hover {
-  background: rgb(54,198,244);
-  background: linear-gradient(90deg, rgb(47, 171, 212) 0%, rgb(106, 201, 158) 100%);
-  cursor: pointer;
-  
-}
-
-
-<section>
-  <div class="top">
-    <div>
-      <input placeholder="top text">
-      <input placeholder="bottom text">
-    </div>
-    <button>Click For A New Image</button>
-  </div>
-  <div class="meme-img">
-    <p></p>
-  </div>
-</section>
-
 * {
   margin: 0px;
   box-sizing: border-box;
@@ -133,10 +66,22 @@ input {
 }
 
 button {
+  background: rgb(54,198,244);
+  background: linear-gradient(90deg, rgba(54,198,244,1) 0%, rgba(135,254,201,1) 100%);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  transition: all 1s;
+  color: white;
   width: 100%;
 }
 
-.meme
+button:hover {
+  background: rgb(54,198,244);
+  background: linear-gradient(90deg, rgb(47, 171, 212) 0%, rgb(106, 201, 158) 100%);
+  cursor: pointer;
+  
+}
 
 .meme-img p {
   width: 300px;
