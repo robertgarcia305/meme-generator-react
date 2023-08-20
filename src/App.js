@@ -12,16 +12,36 @@
 
 import logo from './logo.svg';
 import './App.css';
+import { React, useState } from "react";
 
+// components
 import Header from './components/Header';
 import Body from './components/Body';
 
+// data
+import memesData from './memesData';
 
 function App() {
+  const [memeImage, setMemeImage] = useState("");
+
+  const getImage = () => {
+    // access array
+    let memeArray = memesData.data.memes;
+    // random 
+    let randomImage = Math.floor(Math.random() * memeArray.length);
+    // result 
+    let result = memeArray[randomImage].url
+    // set the new 
+    setMemeImage(result);
+  }
+
   return (
     <div className="App">
       <Header />
-      <Body />
+      <Body 
+      function={getImage}
+      image={memeImage}
+      />
     </div>
   );
 }
