@@ -41,28 +41,43 @@ header {
 
 /* meme section */
 
-* {
-  margin: 0px;
-  box-sizing: border-box;
+.meme-img {
+  max-height: auto;
+  max-width: 1000px;
+  border: 1px solid black;
+}
+
+.meme-img img {
+  width: 100%;
 }
 
 section {
-  width: 500px;
-  border: 1px solid blue;
+  border: 1px solid red;
+  width: 1000px;
   padding: 10px;
-}
-
-.top {
-  border: 1px solid green;
-}
-
-.top div {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meme-top {
+  width: 500px;
+  border: 1px solid red;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+
+}
+
+.inputs div {
+
 }
 
 input {
-  width: 45%;
+  width: 90%;
+  padding: 10px;
 }
 
 button {
@@ -81,10 +96,4 @@ button:hover {
   background: linear-gradient(90deg, rgb(47, 171, 212) 0%, rgb(106, 201, 158) 100%);
   cursor: pointer;
   
-}
-
-.meme-img p {
-  width: 300px;
-  border: 1px solid red;
-  height: 300px;
 }
