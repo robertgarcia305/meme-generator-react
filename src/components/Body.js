@@ -1,18 +1,24 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const Body = () => {
+const Body = (props) => {
     return (
         <section>
-            <div className="top">
-                <div>
-                    <input placeholder="top text"></input>
-                    <input placeholder="bottom text"></input>
+            <div className="meme-top">
+                <div className="inputs">
+                    <div>
+                        <input placeholder="Top Text"></input>
+                    </div>
+                    <div>
+                        <input placeholder="Bottom Text"></input>
+                    </div>
                 </div>
-                <button>Click For A New Image</button>
+                <div className="button">
+                    <button onClick={props.function}>Generate Meme</button>
+                </div>
             </div>
-            <div className="meme-img">
-                
+            <div className="meme-img" >
+                <img className="memeImg" src={props.image}></img>
             </div>
         </section>
     );
