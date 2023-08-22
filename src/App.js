@@ -25,23 +25,22 @@ function App() {
   const [memeImage, setMemeImage] = useState("");
 
   const getImage = () => {
-    // access array
+    // access array, random , result, set new image
     let memeArray = memesData.data.memes;
-    // random 
     let randomImage = Math.floor(Math.random() * memeArray.length);
-    // result 
     let result = memeArray[randomImage].url
-    // set the new 
     setMemeImage(result);
   }
 
   return (
-    <div className="App">
-      <Header />
-      <Body 
-      function={getImage}
-      image={memeImage}
-      />
+    <div className="app-wrap">
+      <div className="app">
+        <Header />
+        <Body 
+        function={getImage}
+        image={memeImage}
+        />
+      </div>
     </div>
   );
 }

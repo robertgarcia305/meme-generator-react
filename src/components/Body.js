@@ -6,15 +6,11 @@ const Body = (props) => {
         <section>
             <div className="meme-top">
                 <div className="inputs">
-                    <div>
-                        <input placeholder="Top Text"></input>
-                    </div>
-                    <div>
-                        <input placeholder="Bottom Text"></input>
-                    </div>
+                    <div><input placeholder="Top Text"></input></div>
+                    <div><input placeholder="Bottom Text"></input></div>
                 </div>
-                <div className="button">
-                    <button onClick={props.function}>Generate Meme</button>
+                <div className="button-wrap">
+                    <button onClick={props.function}>Generate Image</button>
                 </div>
             </div>
             <div className="meme-img" >
