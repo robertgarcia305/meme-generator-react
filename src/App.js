@@ -32,6 +32,20 @@ function App() {
     setMemeImage(result);
   }
 
+
+  // test code
+  // states for top and bottom text
+  const [bottomText, setBottomText] = useState("");
+  const [topText, setTopText] = useState("");
+
+  const changeTop = (event) => {
+    setTopText(event.target.value);
+  }
+
+  const changeBottom = (event) => {
+    setBottomText(event.target.value);
+  }
+
   return (
     <div className="app-wrap">
       <div className="app">
@@ -39,6 +53,10 @@ function App() {
         <Body 
         function={getImage}
         image={memeImage}
+        topTextChange={changeTop}
+        BottomTextChange={changeBottom}
+        top={topText}
+        bottom={bottomText}
         />
       </div>
     </div>

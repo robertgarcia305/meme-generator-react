@@ -125,6 +125,47 @@ input {
   max-width: 1040px;
 }
 
+
+/* code i wrote over */
+
+.image-wrap {
+  border: 1px solid red;
+  position: alternative;
+  display: flex;
+  height: 200px;
+  justify-content: center;
+}
+
+img {
+  height: 200px;
+  position: absolute;
+}
+
+.text-wrap {
+  border: 1px solid blue;
+  height: auto;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-wrap p {
+  background-color: black;
+  font-family: sans-serif;
+  color: white;
+  padding: 7px;
+  border-radius: 10px;
+  margin: 3px 0px;
+}
+
+
+
+
+
+
+
 @media (max-width: 1040px) {
   .app {
     width: 100%;
