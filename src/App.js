@@ -22,7 +22,7 @@ import Body from './components/Body';
 import memesData from './memesData';
 
 function App() {
-  const [memeImage, setMemeImage] = useState("");
+  const [memeImage, setMemeImage] = useState("https://i.imgflip.com/1wz1x.jpg");
 
   const getImage = () => {
     // access array, random , result, set new image
@@ -54,7 +54,7 @@ function App() {
         function={getImage}
         image={memeImage}
         topTextChange={changeTop}
-        BottomTextChange={changeBottom}
+        bottomTextChange={changeBottom}
         top={topText}
         bottom={bottomText}
         />
